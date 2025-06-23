@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin | BABA E VEHICLES</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-database-compat.js"></script>
+</head>
+<body>
+  <header><h1>Admin Panel</h1></header>
+
+  <section id="login-section">
+    <h2>Admin Login</h2>
+    <input type="email" id="email" placeholder="Email" />
+    <input type="password" id="password" placeholder="Password" />
+    <button onclick="login()">Login</button>
+  </section>
+
+  <section id="dashboard" style="display:none;">
+    <h2>Contact Submissions</h2>
+    <button onclick="logout()">Logout</button>
+    <ul id="contact-list"></ul>
+  </section>
+
+  <script src="admin.js"></script>
+</body>
+</html>
